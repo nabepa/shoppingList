@@ -63,14 +63,13 @@ function createItem(text) {
 }
 
 function onAddPrice() {
-  const price = inputPrice.value;
+  const price = parseFloat(inputPrice.value);
   inputPrice.value = '';
-  if (price === '') {
+  if (price >= 0) {
+    tempPrice.innerText = `${parseFloat(price)}KRW`;
     document.activeElement.blur();
-    tempPrice = undefined;
     return;
   }
-  tempPrice.innerText = `${parseFloat(price)}KRW`;
 }
 
 addBtn.addEventListener('click', () => {
