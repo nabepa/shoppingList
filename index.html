@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping List</title>
+    <script
+      src="https://kit.fontawesome.com/b9e3004d12.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+    <style></style>
+  </head>
+
+  <body>
+    <section class="list">
+      <header class="header">Shopping List</header>
+      <ul class="items">
+          <li class="item__row">
+              <div class="item">
+                  <p class="item__name">우유</p>
+                  <p class="item__price">3000KRW</p> 
+                  <button class="item__delete"><i class="fas fa-trash"></i></button>
+              </div>
+              <div class="item__divider"></div>             
+          </li>
+      </ul>
+      <footer class="footer">
+        <input class="footer__input--price" type="number" placeholder="Enter the price of item"></input>
+        <input
+          type="text"
+          class="footer__input--item"
+          placeholder="Enter an item to purchase"
+        />
+        <button class="footer__button"><i class="fas fa-plus"></i></i></button>
+      </footer>
+    </section>
+  </body>
+</html>
