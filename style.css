@@ -62,12 +62,9 @@ body {
   padding: 10px 2px;
 }
 
-.item__name:hover {
-  color: #c23616;
-  cursor: pointer;
-}
-
+.item__name:hover,
 .item__price:hover {
+  color: #c23616;
   cursor: pointer;
 }
 
